@@ -1,76 +1,88 @@
-# =========================================================
-# STM32 / Embedded C / STM32CubeIDE
-# =========================================================
-
-# Build output directories
-Debug/
-Release/
-build/
-**/Debug/
-**/Release/
-**/build/
-
-# Compiler / linker artifacts
-*.o
+# ===== C / Toolchain basics =====
+# Prerequisites
 *.d
-*.su
-*.a
-*.elf
-*.bin
-*.hex
-*.map
-*.list
-*.srec
+
+# Object files
+*.o
+*.ko
 *.obj
+*.elf
+
+# Linker output
+*.ilk
+*.map
+*.exp
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+
+# Shared objects (incl. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables / firmware images
+*.exe
 *.out
-*.tmp
+*.app
+*.i*86
+*.x86_64
+*.hex
+*.bin
+*.axf
+*.srec
 
-# Dependency / generated files
-*.dep
-*.bak
-
-# =========================================================
-# Eclipse / STM32CubeIDE workspace-specific files
-# =========================================================
-
-# Workspace metadata (should never be versioned)
-.metadata/
-
-# User-local launch/debug configs
-*.launch
-
-# Optional: user-specific preference/cache files
-.settings/language.settings.xml
-
-# =========================================================
-# Python helper script environment
-# =========================================================
-
-__pycache__/
-*.py[cod]
-*.pyo
-*.pyd
-.python-version
-
-venv/
-.venv/
-env/
-
-# Test / cache / logs
-.pytest_cache/
-.mypy_cache/
-.coverage
-htmlcov/
+# Listings / logs
+*.lst
+*.list
 *.log
 
-# =========================================================
-# OS / editor noise
-# =========================================================
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
 
+# Kernel Module Compile Results
+*.mod*
+*.cmd
+.tmp_versions/
+modules.order
+Module.symvers
+Mkfile.old
+dkms.conf
+
+# DWARF debug info
+*.dwo
+
+# ===== STM32CubeIDE / Eclipse (user-specific) =====
+.settings/
+*.launch
+# Keep project metadata so the repository can be imported directly into STM32CubeIDE:
+# !.project
+# !.cproject
+
+# ===== Build directories =====
+[Dd]ebug/
+[Rr]elease/
+[Bb]uild/
+[Oo]ut/
+# intermedios frecuentes
+**/[Oo]bj/
+**/[Ll]og/
+
+# ===== Editor & OS =====
+.vscode/
+.idea/
 .DS_Store
 Thumbs.db
-desktop.ini
-
 *.swp
-*.swo
-*~
+
