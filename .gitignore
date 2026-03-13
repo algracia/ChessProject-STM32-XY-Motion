@@ -1,0 +1,76 @@
+# =========================================================
+# STM32 / Embedded C / STM32CubeIDE
+# =========================================================
+
+# Build output directories
+Debug/
+Release/
+build/
+**/Debug/
+**/Release/
+**/build/
+
+# Compiler / linker artifacts
+*.o
+*.d
+*.su
+*.a
+*.elf
+*.bin
+*.hex
+*.map
+*.list
+*.srec
+*.obj
+*.out
+*.tmp
+
+# Dependency / generated files
+*.dep
+*.bak
+
+# =========================================================
+# Eclipse / STM32CubeIDE workspace-specific files
+# =========================================================
+
+# Workspace metadata (should never be versioned)
+.metadata/
+
+# User-local launch/debug configs
+*.launch
+
+# Optional: user-specific preference/cache files
+.settings/language.settings.xml
+
+# =========================================================
+# Python helper script environment
+# =========================================================
+
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.python-version
+
+venv/
+.venv/
+env/
+
+# Test / cache / logs
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+*.log
+
+# =========================================================
+# OS / editor noise
+# =========================================================
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+*.swp
+*.swo
+*~
